@@ -1,0 +1,450 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+/*
+|----------------------------------------------
+| Reset
+|----------------------------------------------
+*/
+
+
+*, html, body {margin:0; padding:0; font-size:100%;}
+body {font:0.93em Tahoma, Arial, sans-serif; color:#000; text-align:left; line-height:1.3em;}
+	a {text-decoration:none; color:#1a1a1a;}
+	a:hover {}
+	img, a img, fieldset {border:0;}
+	address, em {font-style:normal;}
+	li {list-style-type:none;}
+	table {border-collapse:collapse;}
+	p{
+        font-family: arial, sans-serif;
+        text-align: justify; 
+        color: #000;
+        line-height:25px;
+    }
+	p + p {margin-top:10px;}
+
+
+
+/* bg do body */
+body{
+    background-color: #ccc;
+}
+
+/* caixa de preenchimento */
+.cem{
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+/* grade de 990px */
+.grid{
+    margin: 0 auto;
+    width: 990px;
+}
+
+
+/* 
+|______________________________________
+|componentes do header 
+|--------------------------------------
+*/
+
+.header-lv1{
+    margin: 0;
+    padding: 0;
+    height: 105px;
+    background: #000;
+}
+
+.header-lv1 h1{
+    float: left;
+}
+
+.logo{
+    margin: 20px 0;
+    display: block;
+}
+
+.logo:hover{
+    opacity: .7;
+}
+
+/* estilo do menu */
+
+#menu{
+    float: right;
+}
+
+.menu{
+    text-align: center;
+    list-style: none;
+    margin: 21px 0 0;
+    padding: 0;
+    background: #000;
+}
+
+.menu-item{
+    display: inline-block;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+#menu span{
+    display: block;
+    margin: 5px 0;
+}
+
+#menu a{
+    font: normal 15px 'Open Sans', sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a:hover{
+    color: #ffa500;
+    cursor: pointer;
+}
+
+.menu-item{
+    float: left; position: relative;
+}
+
+.dropdown{
+    padding: 30px 0;
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    top: 89px;
+    left: -144px;
+    width: 333px;
+    z-index: 5;
+    background: #000;
+}
+
+.dropdown:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -2px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid black;
+} 
+
+.drop-menu:hover .dropdown{
+    display:block;
+}
+
+.drop-item{
+    padding:0 25px;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu-item-dropdown{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+} /* fim do estilo do menu */
+
+.section-lv1{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    height: 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+|________________________________
+|barra de informação e busca
+|--------------------------------
+*/
+.info-icon ul{
+    padding: 0;
+    margin: 0;
+    float: left;
+    list-style: none;
+    background: #fff;
+    height: 80px;
+}
+
+.info-icon li{
+    display: inline-block;
+    float: left;
+    width: 160px;
+    margin: 13px 15px 13px 0;
+}
+
+.info-icon p{
+    font: italic 14px 'Open Sans', sans-serif;
+    color: #848383;
+    margin: 0;
+    padding: 4px 0;
+    display: block;
+}
+
+.list-icon{
+    height: 55px;
+}
+
+.icon{
+    float:left;
+    margin-right: 5px;
+}
+
+#search-box{
+    position: relative;
+    float: right;
+    margin: 18px 0;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+
+#txt-search{
+    background: #ccc;
+    border: none;
+    padding-right: 42px;
+    padding-left: 10px;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#txt-search:focus{
+    background: #999;
+    color: #fff;
+}
+
+.btn-search{
+    background: url('../img/icon-lupa.png') no-repeat;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    border: 0;
+    outline: none;
+    text-indent: -9999px;
+}
+
+.btn-search:hover{
+    opacity: .6;
+} /* fim da barra de informação e busca */
+
+
+/*
+|__________________________________________________
+|banner, botões e carrossel
+|--------------------------------------------------
+*/
+
+section-lv2{
+    padding: 0;
+    margin: 0;
+}
+
+.section-lv2 ul{
+    padding: 0; 
+    margin: 10px 0;
+    list-style: none;
+}
+
+.section-lv2 li{
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#painel .grid{
+    position: relative;
+}
+
+.banner{
+    max-width: 100%;
+}
+
+.link-banner{
+    display: block;
+    text-decoration: none;
+}
+
+.link-banner:hover{
+    opacity: .9;
+}
+
+.button-left, .button-right{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin-top: -35px;
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+    position: absolute; top: 50%;
+}
+.button-left{
+    background: #fff url('../img/icon-esquerda.png') 16px 7px no-repeat;
+    left: -35px;
+}
+
+.button-right{
+    background: #fff url('../img/icon-direita.png') 20px 7px no-repeat;
+    right: -35px;
+}
+
+.button-left:hover , .button-right:hover{
+    cursor: pointer;
+    opacity: .8;
+} /* fim do banner botões e carrossel*/
+
+
+/*
+|____________________________________________________
+|produtos de destaque, prateleira de produtos
+|----------------------------------------------------
+*/
+.section-lv3{
+    padding: 0; /* reset */
+    margin: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.destaque{
+    margin: 35px 0;
+}
+
+.destaque h3{
+    text-align: center;
+}
+
+.borda-destaque{
+    border-bottom: 10px solid #2f4f4f;
+    width: 50px;
+    margin: 12px auto 0;
+}
+
+.prateleira{
+    margin: 0;
+    padding: 0;
+}
+
+.desc-prod{
+    display: block;
+    width: 200px;
+    float: left;
+    margin: 8px 0 0;
+}
+
+.prateleira ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+
+.prateleira ul li{
+    display: inline-block;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 302px;
+    height: 400px;
+    float: left;
+}
+
+.prateleira li{
+    margin-top:40px;
+    margin-right:40px;
+}
+.prateleira li:nth-child(3n){
+    margin-right:0px;
+}
+
+.prateleira strong{
+    margin: 0;
+    padding: 0;
+    display: block;
+    font: 600 18px 'Open Sans', sans-serif;
+    color: #000;
+    line-height: 18px;
+}
+
+
+
+.prateleira .categoria{
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+    font: 600 12px 'Open Sans', sans-serif;
+    color: #bebdbd;
+}
+
+.link-prateleira{
+    display: block;
+    text-decoration: none;
+}
+
+.link-prateleira:hover{
+    opacity: .9;
+}
+
+.preço{
+    float: right;
+    margin: 18px 0 0;
+    font: 600 18px 'Open Sans', sans-serif;
+    color: #7e9977;
+}
+
+.cifrao{
+    font: 600 12px 'Open Sans', sans-serif;
+    color: #000;
+}
+
+
+
+.thumb{
+    max-width: 100%;
+} /* fim da prateleira */
+
+
+/*
+|_________________________________________-
+|rodapé
+|-----------------------------------------
+*/
+footer{
+    background: #000;
+    height: 120px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.icon-camala{
+    margin: 24px 0;
+    padding: 0;
+}
+
+.link-camala{
+    display: inline-block;
+    text-decoration: none;
+} /* fim do rodapé */
+
+
